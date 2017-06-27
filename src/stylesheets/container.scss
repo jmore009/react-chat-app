@@ -15,8 +15,8 @@
             background: #FFF;
             padding: 30px;
             margin: auto;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-            border-radius: 3px;
+            @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
+            @include border-radius(3px);
         }
 
     } //container-cell
