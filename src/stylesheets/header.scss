@@ -1,30 +1,36 @@
 header{
+    width: 100%;
+    height: 60px;
     background: black;
     color: #FFF;
     padding: 10px;
     overflow: hidden;
-}
 
-    header h1.logo{
+    h1.logo{
         float: left;
     }
 
-    header nav{
+    nav{
         float: right;
-    }
 
-        header nav ul.navigation{
+        ul.navigation{
             list-style-type: none;
-        }
 
-            header nav ul.navigation li.navigation-item{
+            li.navigation-item{
                 display: inline-block;
                 vertical-align: middle;
-            }
 
-                header nav ul.navigation li.navigation-item a{
+                a{
                     font-size: 14px;
                     color: #FFF;
                     text-decoration: none;
                     margin: 0 10px
                 }
+
+            } //li.navigation
+
+        } //ul.navigation
+
+    } //nav
+
+} // header

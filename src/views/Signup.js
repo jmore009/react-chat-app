@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { SignUpForm } from '../components/public'
+import { SignupForm } from '../components/public'
 
 class Signup extends Component{
     render(){
         return(
-            <div className="signup-wrapper">
-                <h2>Sign Up Now!</h2>
-                <SignUpForm />
+            <div className="container-wrapper">
+                <div className="container-cell">
+                    <div className="container-box">
+                        <SignupForm />
+                    </div>
+                </div>
             </div>
         )
     }

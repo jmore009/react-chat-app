@@ -17,7 +17,7 @@ var config = {
                    presets: ['es2015', 'react'] // use es2015 and react
                }
            },
-           { test: /\.css$/, loader: "style-loader!css-loader" },
+           {test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"]}
       ]
    }
 }

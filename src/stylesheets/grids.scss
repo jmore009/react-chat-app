@@ -1,0 +1,179 @@
+//*****************************
+//FLUID WIDTHS
+//*****************************
+
+//if table cell is used instead overwrite floats
+.table{
+  display: table;
+  table-layout: fixed;
+
+  .one-tenth, .one-fifth, .quarter, .thirds, .two-fifths, .half, .three-fifths, .three-quarters, .full, .three-tenths, .seven-tenths, .sixths, .one-fifteenth, .two-thirds{
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+    height: 100%;
+  }
+}
+
+.one-tenth{
+  float: left;
+  width: 10%;
+}
+
+.one-fifteenth{
+  float: left;
+  width: 15%;
+}
+
+.sixths{
+  float: left;
+  width: 16.666666%;
+}
+
+.one-fifth{
+  float: left;
+  width: 20%;
+}
+
+.quarter{
+  float: left;
+  width: 25%;
+}
+
+.three-tenths{
+  float: left;
+  width: 30%;
+}
+
+.thirds{
+  float: left;
+  width: 33.3333333%;
+}
+
+.two-fifths{
+  float: left;
+  width: 40%;
+}
+
+.half{
+  float: left;
+  width: 50%;
+}
+
+.three-fifths{
+  float: left;
+  width: 60%;
+}
+
+.two-thirds{
+  float: left;
+  width: 66.666666%;
+}
+
+.seven-tenths{
+  float: left;
+  width: 70%;
+}
+
+.three-quarters{
+  float: left;
+  width: 75%;
+  }
+
+.four-fifths{
+  float: left;
+  width: 80%;
+  }
+
+.nine-tenths{
+  float: left;
+  width: 90%;
+  }
+
+.full{
+  width: 100%;
+}
+
+//*****************************
+//FIXED WIDTHS
+//*****************************
+.fixed-200{
+  width: 200px;
+  float: left;
+}
+
+.fixed-250{
+  width: 250px;
+  float: left;
+}
+
+.fixed-300{
+  width: 300px;
+  float: left;
+}
+
+.fixed-400{
+  width: 400px;
+  float: left;
+}
+
+
+//*****************************
+//CALCULATED WIDTHS
+//*****************************
+.calc-30{
+  width: calc(100% - 30px);
+  float: left;
+}
+
+.calc-250{
+  width: calc(100% - 250px);
+  float: left;
+}
+
+.calc-300{
+  width: calc(100% - 300px);
+  float: left;
+}
+
+.calc-400{
+  width: calc(100% - 400px);
+  float: left;
+}
+
+.calc-500{
+  width: calc(100% - 500px);
+  float: left;
+}
+
+.calc-550{
+  width: calc(100% - 550px);
+  float: left;
+}
+
+.calc-600{
+  width: calc(100% - 600px);
+  float: left;
+}
+
+//*****************************
+//CUSTOM WIDTHS
+//*****************************
+
+.custom-width-1{
+  float: left;
+  width: 38%;
+
+  &.tweak{
+    width: 36%;
+  }
+}
+
+.custom-width-2{
+  float: left;
+  width: 24%;
+
+  &.tweak{
+    width: 27%;
+  }
+ }

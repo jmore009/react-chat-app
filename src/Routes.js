@@ -6,7 +6,7 @@ import Signup from './views/Signup'
 class Routes extends Component{
     render(){
         return(
-            <div>
+            <div className="content-wrapper">
                 <Route exact path="/" component={Home} />
                 <Route path="/signup" component={Signup} />
             </div>

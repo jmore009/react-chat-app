@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App.js';
-import './stylesheets/base.css';
+//stylesheets
+require("!style-loader!css-loader!sass-loader!./stylesheets/compile.scss");
 
 ReactDOM.render(
-    <Router>
+    <Router >
         <App />
     </Router>,
     document.getElementById('app')

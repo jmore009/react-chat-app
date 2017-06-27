@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -19,7 +19,10 @@
   },
   "devDependencies": {
     "css-loader": "^0.28.4",
-    "style-loader": "^0.18.2"
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0"
   },
   "author": "",
   "license": "ISC"

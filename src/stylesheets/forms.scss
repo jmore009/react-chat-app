@@ -1,0 +1,29 @@
+.form-wrapper{
+    width: 100%;
+
+    .input-container{
+        margin: 0 0 20px;
+    }
+} //form-wrapper
+
+.input-container{
+
+    &.full{
+        input[type=text]{
+            width: 100%;
+        }
+    }
+
+    label{
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    input[type=text]{
+        display: inline-block;
+        width: 96%;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding: 10px;
+    }
+
+} //input-container
