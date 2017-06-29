@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { SignupForm } from '../components/public'
+import { LoginForm } from '../components/public'
 import update from 'immutability-helper';
 
-class Signup extends Component{
+
+class Login extends Component{
     constructor(props){
         super(props);
 
         this.state = {
-            formFields: {first_name: "", last_name: "", email: "", password: "", password_confirmation: ""} ,
-            formErrors: {first_name: "", last_name: "", email: "", password: "", password_confirmation: ""} ,
+            email: "",
+            password: "",
+            formErrors: {email: "", password: ""} ,
             emailValid: false,
             passwordValid: false,
             formValid: false
@@ -20,36 +22,34 @@ class Signup extends Component{
 
     handleFormSubmit(event){
         event.preventDefault()
-        let fields = this.state.formFields;
-        let random = Math.floor(Math.random() * 10000000) + 1;
-        firebase.database().ref('users').set({
-           id: random,
-           first_name: fields.first_name,
-           last_name: fields.last_name,
-           email: fields.email,
-           password: fields.password
-         });
+        console.log("hey?c ", this.state)
+        // let fields = this.state.formFields;
+        // let random = Math.floor(Math.random() * 10000000) + 1;
+        // firebase.database().ref('users').set({
+        //    id: random,
+        //    first_name: fields.first_name,
+        //    last_name: fields.last_name,
+        //    email: fields.email,
+        //    password: fields.password
+        //  });
     }
 
     handleInputChange(event){
       let key = event.target.name;
       let val = event.target.value;
-      let current_state = this.state.formFields;
-      let obj = {}
-      obj[key] = val;
-      this.setState({
-          formFields: update(current_state, {$merge: obj})
-      });
+      this.setState({[key]: val});
     }
+
 
     render(){
         return(
             <div className="container-wrapper">
                 <div className="container-cell">
                     <div className="container-box">
-                        <SignupForm
+                        <LoginForm
                             handleFormSubmit={this.handleFormSubmit}
-                            formFields={this.state.formFields}
+                            email={this.state.email}
+                            password={this.state.password}
                             handleInputChange={this.handleInputChange}
                         />
                     </div>
@@ -57,6 +57,6 @@ class Signup extends Component{
             </div>
         )
     }
-};
+}
 
-export default Signup;
+export default Login;

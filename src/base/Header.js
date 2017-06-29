@@ -14,6 +14,9 @@ class Header extends Component{
                         <li className="navigation-item">
                             <Link to="/signup">Signup</Link>
                         </li>
+                        <li className="navigation-item">
+                            <Link to="/login">Login</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>

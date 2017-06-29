@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import Home from './views/Home'
 import Signup from './views/Signup'
+import Login from './views/Login'
 
 class Routes extends Component{
     render(){
@@ -9,6 +10,7 @@ class Routes extends Component{
             <div className="content-wrapper">
                 <Route exact path="/" component={Home} />
                 <Route path="/signup" component={Signup} />
+                <Route path="/login" component={Login} />
             </div>
         )
     }
